@@ -1,0 +1,12 @@
+#ifndef CANNY_PLUGIN_GLOBAL_H
+#define CANNY_PLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CANNY_PLUGIN_LIBRARY)
+#  define CANNY_PLUGINSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CANNY_PLUGINSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TEMPLATE_PLUGIN_GLOBAL_H
